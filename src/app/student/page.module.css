@@ -1,0 +1,90 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+    overflow: hidden; /* ซ่อนส่วนที่ล้นออกมาจากกรอบ */
+    margin-bottom: 20px;
+  }
+  
+  .profileImage {
+    float: left; /* จัดภาพให้ลอยทางด้านซ้าย */
+    margin-right: 20px; /* เว้นระยะห่างจากเนื้อหา */
+    border-radius: 0; /* กำหนดให้กรอบเป็นสี่เหลี่ยม */
+    border: 2px solid #ddd; /* เพิ่มกรอบสีเทาอ่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    max-width: 100%; /* ขยายภาพให้เต็มความกว้างของกรอบ */
+    height: auto; /* ปรับความสูงตามขนาดที่กำหนด */
+  }
+  
+  .info {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .projects {
+    margin-top: 30px;
+  }
+  
+  .projects h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .projectLink {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .projectLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* page.module.css */
+.projectsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .projectsTable th,
+  .projectsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .projectsTable th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .projectsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .projectsTable a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .projectsTable a:hover {
+    text-decoration: underline;
+  }

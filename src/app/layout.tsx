@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Link from 'next/link';
+import styles from './laoutstyle/layout.module.css'; // ต้องตรงกับตำแหน่งของไฟล์จริง
+
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${styles.body}`}>
+        <header className={styles.header}>
+          <h1>CIS</h1>
+          <nav className={styles.nav}>
+            <Link href="/" className={styles.link}>Home</Link>
+            <Link href="/student" className={styles.link}>Student</Link>
+            <Link href="/pokemon" className={styles.link}>Pokemon</Link>
+          </nav>
+        </header>
+        <main className={styles.main}>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
