@@ -130,7 +130,7 @@ export default function Page() {
               <td>My first next.js</td>
               <td>home page, student page and pokedex</td>
               <td><a href="https://github.com/Natithorn/my-Nextjs" className={styles.projectLink}>GitHub</a></td>
-              <td><a href="#" className={styles.projectLink}>View Project</a></td>
+              <td><a href="https://my-first1-nextjs.vercel.app/" className={styles.projectLink}>View Project</a></td>
             </tr>
           </tbody>
         </table>
